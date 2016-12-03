@@ -1,21 +1,37 @@
-var main = function() {
-    $('.dropdown-toggle').click(function() {
-        $('.dropdown-menu').toggle()
+$(function(){
+
+  // Dropdown Menu
+    var menu = $('.menu')
+    var dropdown_toggle = menu.find('.dropdown_toggle');
+    var dropdown_menu = menu.find('.dropdown_menu');
+    var menu_arrow = menu.find('b');
+
+    dropdown_toggle.on('click',function() {
+        dropdown_menu.toggle();
+        // menu_arrow.toggleClass('caret');
+        // menu_arrow.toggleClass('caret-top');
     });
-    
-    $('.arrow-next').click(function() {
-        var currentSlide = $('.active-slide');
+
+  // Slider
+    var slider_navigation = $('.slider-nav');
+    var arrow_next = slider_navigation.find('.arrow-next');
+    var arrow_prev = slider_navigation.find('.arrow-prev');
+    var slider = $('.slider');
+    var slide = slider.find('.slide');
+    var dot = slider_navigation.find('.dot');
+
+    arrow_next.on('click',function() {
+        var currentSlide = slider.find('.active-slide');
         var nextSlide = currentSlide.next();
-        
-        var currentDot = $('.active-dot');
+        var currentDot = slider_navigation.find('.active-dot');
         var nextDot = currentDot.next();
         
-        if(nextSlide.length == 0) {
-            nextSlide = $('.slide').first();
+        if(nextSlide.length === 0) {
+            nextSlide = slide.first();
         }
         
-        if(nextDot.length == 0) {
-            nextDot = $('.dot').first();
+        if(nextDot.length === 0) {
+            nextDot = dot.first();
         }
         
         currentSlide.fadeOut(600).removeClass('active-slide');
@@ -25,19 +41,18 @@ var main = function() {
         nextDot.addClass('active-dot');      
     });
     
-    $('.arrow-prev').click(function() {
-      var currentSlide = $('.active-slide');
+    arrow_prev.on('click', function() {
+      var currentSlide = slider.find('.active-slide');
       var prevSlide = currentSlide.prev();
-    
-      var currentDot = $('.active-dot');
+      var currentDot = slider_navigation.find('.active-dot');
       var prevDot = currentDot.prev();
     
       if(prevSlide.length === 0) {
-        prevSlide = $('.slide').last();
+        prevSlide = slide.last();
       }
       
       if(prevDot.length === 0) {
-          prevDot = $('.dot').last();
+          prevDot = dot.last();
       }
     
       currentSlide.fadeOut(600).removeClass('active-slide');
@@ -46,6 +61,6 @@ var main = function() {
       currentDot.removeClass('active-dot');
       prevDot.addClass('active-dot');
     });
-};
 
-$(document).ready(main);
+});
+// $(document).ready(main);

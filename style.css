@@ -2,6 +2,7 @@
   width: 960px;
 }
 
+/* Header styles */
 .header {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #ddd;
@@ -16,6 +17,7 @@
   width: 50px;
 }
 
+/* Navigation and menu styles */
 .header .menu {
   float: right;
   list-style: none;
@@ -44,6 +46,19 @@
   font-weight: 300;
 }
 
+.caret-top {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #000000;
+  display: inline-block;
+  height: 0;
+  opacity: 0.3;
+  vertical-align: top;
+  width: 0;
+}
+
+
+/* Slider styles */
 .slider {
   position: relative;
   width: 100%;
@@ -76,7 +91,7 @@
 }
 
 .slide-copy h1 {
-  color: #95BA00;  
+  color: #8bbe00;  
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -129,6 +144,7 @@
   padding-top: 20px;
 }
 
+/* Slider navigation styles */
 .slider-nav {
   text-align: center;
   margin-top: 20px;
@@ -163,7 +179,7 @@
 }
 
 .slider-dots li.active-dot {
-  color: #363636;
+  color: #8bbe00;
 }
 
 .get-app {
