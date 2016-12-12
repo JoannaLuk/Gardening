@@ -2,15 +2,10 @@ $(function(){
 
   // Dropdown Menu
     var menu = $('.menu')
-    var dropdown_toggle = menu.find('.dropdown_toggle');
-    var dropdown_menu = menu.find('.dropdown_menu');
-    var menu_arrow = menu.find('b');
+    var dropdown_toggle = menu.find('.dropdown-toggle');
+    var dropdown_menu = menu.find('.dropdown-menu');
 
-    dropdown_toggle.on('click',function() {
-        dropdown_menu.toggle();
-        // menu_arrow.toggleClass('caret');
-        // menu_arrow.toggleClass('caret-top');
-    });
+    // dropdown_toggle.dropdown('toggle');
 
   // Slider
     var slider_navigation = $('.slider-nav');
