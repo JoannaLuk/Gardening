@@ -67,7 +67,7 @@
 }
 
 .slide {
-  background: transparent url('Images/gradient-transparent.png') center center no-repeat;
+  background: transparent url('../Images/gradient-transparent.png') center center no-repeat;
   background-size: cover;
   display: none;
   position: absolute;
@@ -126,7 +126,7 @@
 
 .slide-feature {
   text-align: center;
-  background-image: url('Images/garden event.jpeg');
+  background-image: url('../Images/garden event.jpeg');
   height: 470px;
 }
 
@@ -197,4 +197,10 @@
 
 .get-app img {
   height: 40px;
+}
+
+/* Contact form styles */
+#contact-form {
+  display: table;
+  margin: 50px auto;
 }
