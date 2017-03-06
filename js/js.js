@@ -14,6 +14,15 @@ $(function(){
     var slider = $('.slider');
     var slide = slider.find('.slide');
     var dot = slider_navigation.find('.dot');
+    var dotList = slider_navigation.find('.slider-dots li').size();
+    var slideList = slide.size();
+console.log(dotList, slideList);
+
+  //   dot.on('click', function() {
+		// var currentDot = slider_navigation.find('.active-dot');
+		// var chosenDot = 
+  //       var currentSlide = slider.find('.active-slide');
+  //   });
 
     arrow_next.on('click',function() {
         var currentSlide = slider.find('.active-slide');
