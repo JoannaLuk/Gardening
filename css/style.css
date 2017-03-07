@@ -271,3 +271,12 @@ a {
 .copyright {
   color: #dcdcdc;
 }
+
+/* Magazine site styles */
+.magazin_cover {
+  background-image: url(../images/sunset_magazine.jpg);
+  background-size: contain;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
