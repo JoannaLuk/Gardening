@@ -273,7 +273,20 @@ a {
 }
 
 /* Magazine site styles */
+.magazin_layout {
+  display: flex;
+  align-items: center;
+}
+.magazin_info_header  {
+  color: #8bbe00;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-shadow: 1px -1px 2px rgba(139, 190, 0, 0.6);
+}
+
 .magazin_cover {
+  background-color: rgba(139,190,1,0.9);
   background-image: url(../images/sunset_magazine.jpg);
   background-size: contain;
   height: 300px;
